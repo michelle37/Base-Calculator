@@ -57,8 +57,8 @@ class ViewController: UIViewController {
         playSound()
         currentRunningNum += "\(btn.tag)"
         resultLabel.text = currentRunningNum
-        ACbtnLabel.hidden = true
-        cBtnLabel.hidden = false
+//        ACbtnLabel.hidden = true
+//        cBtnLabel.hidden = false
     }
 
     @IBAction func onPressMultipleBtn(sender: UIButton) {
@@ -83,9 +83,14 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func onPressCBtn(sender: UIButton){
-        ACbtnLabel.hidden = false
-        cBtnLabel.hidden = true
+//    @IBAction func onPressCBtn(sender: UIButton){
+//        ACbtnLabel.hidden = false
+//        cBtnLabel.hidden = true
+//        clearAll()
+//        playSound()
+//    }
+    @IBAction func onPressACBtn(sender: UIButton){
+        currentOperation = Operation.Empty
         clearAll()
         playSound()
     }
@@ -96,10 +101,9 @@ class ViewController: UIViewController {
     }
 
     func clearAll(){
+        resultLabel.text = "0"
         currentRunningNum = ""
-        rightSideNum = ""
-        leftSideNum = ""
-        resultLabel.text = currentRunningNum
+
     }
     
     func playSound(){
