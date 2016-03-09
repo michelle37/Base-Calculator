@@ -189,11 +189,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDO-uF-vRS">
+                                <rect key="frame" x="213" y="140" width="188" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="lUo-Ob-l4o"/>
+                                    <constraint firstAttribute="width" constant="188" id="vpK-E8-hjn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="m2Q-jJ-Ox1" secondAttribute="trailing" id="4yp-ln-Mr1"/>
+                            <constraint firstItem="GDO-uF-vRS" firstAttribute="top" secondItem="b93-xb-4us" secondAttribute="top" id="7Wx-5P-aFV"/>
                             <constraint firstItem="b93-xb-4us" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L84-ZU-a3j"/>
+                            <constraint firstItem="b93-xb-4us" firstAttribute="trailing" secondItem="GDO-uF-vRS" secondAttribute="trailing" constant="19" id="Lws-I9-uKN"/>
                             <constraint firstItem="m2Q-jJ-Ox1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c38-fw-8LM"/>
                             <constraint firstItem="b93-xb-4us" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dCg-kH-0NE"/>
                             <constraint firstItem="m2Q-jJ-Ox1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kZN-tF-Zgx"/>
