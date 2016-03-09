@@ -174,12 +174,12 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGM-Oe-6ck">
                                                         <rect key="frame" x="180" y="0.0" width="60" height="60"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="92" id="1D1-gE-9K2"/>
-                                                            <constraint firstAttribute="width" constant="92" id="y9z-5B-Ewx"/>
+                                                            <constraint firstAttribute="height" constant="60" id="1D1-gE-9K2"/>
+                                                            <constraint firstAttribute="width" constant="60" id="y9z-5B-Ewx"/>
                                                         </constraints>
                                                         <state key="normal" image="_"/>
                                                         <connections>
-                                                            <action selector="onPressMinusBtn:" destination="BYZ-38-t0r" eventType="touchDragInside" id="V0r-7h-OGO"/>
+                                                            <action selector="onPressMinusBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UaB-V1-qlw"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -193,12 +193,12 @@
                                                             <constraint firstAttribute="width" constant="60" id="XIJ-1b-ZWp"/>
                                                             <constraint firstAttribute="height" constant="60" id="jgm-vS-c8m"/>
                                                         </constraints>
-                                                        <state key="normal" image="dot"/>
+                                                        <state key="normal" image="="/>
                                                         <connections>
-                                                            <action selector="onPressDotBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wvh-Cp-MX5"/>
+                                                            <action selector="onPressEqualBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="li1-OX-AOg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk4-hW-a8s" userLabel="AC">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk4-hW-a8s" userLabel="AC">
                                                         <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="89V-aS-tsy"/>
@@ -209,14 +209,14 @@
                                                             <action selector="onPressACBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJu-2x-77x"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aip-4c-M3y" userLabel="C">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aip-4c-M3y" userLabel="C">
                                                         <rect key="frame" x="120" y="0.0" width="0.0" height="60"/>
                                                         <state key="normal" image="c"/>
                                                         <connections>
                                                             <action selector="onPressCBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZa-uv-XBF"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUA-Ge-6rY">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUA-Ge-6rY">
                                                         <rect key="frame" x="120" y="0.0" width="60" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="8L3-LT-Vt2"/>
@@ -227,7 +227,7 @@
                                                             <action selector="onPressPercentBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAK-e6-dgC"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIk-ee-RgI">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIk-ee-RgI">
                                                         <rect key="frame" x="180" y="0.0" width="60" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="7zq-mY-jxe"/>
@@ -271,7 +271,6 @@
                     <connections>
                         <outlet property="ACbtnLabel" destination="mk4-hW-a8s" id="Idx-fO-uOr"/>
                         <outlet property="cBtnLabel" destination="Aip-4c-M3y" id="7mn-jz-2KD"/>
-                        <outlet property="dotBtn" destination="4jt-nm-Wnw" id="T2h-IS-Aqg"/>
                         <outlet property="resultLabel" destination="GDO-uF-vRS" id="x2a-DG-Tec"/>
                     </connections>
                 </viewController>
@@ -292,6 +291,7 @@
         <image name="7" width="60" height="60"/>
         <image name="8" width="60" height="60"/>
         <image name="9" width="60" height="60"/>
+        <image name="=" width="180" height="180"/>
         <image name="X" width="60" height="60"/>
         <image name="\" width="60" height="60"/>
         <image name="_" width="60" height="60"/>
@@ -299,6 +299,5 @@
         <image name="bg" width="400" height="403"/>
         <image name="c" width="60" height="60"/>
         <image name="counter" width="166" height="38"/>
-        <image name="dot" width="60" height="60"/>
     </resources>
 </document>
